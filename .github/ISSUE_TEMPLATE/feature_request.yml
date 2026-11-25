@@ -1,0 +1,24 @@
+name: Feature request
+description: Propose a concrete, testable Metashape workflow.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Real workflow and outcome
+      description: Explain the dataset type, operator goal, and why existing tools are insufficient.
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Reversibility and validation
+      description: Describe what changes, how success is measured, and how the operation can be rejected or rolled back.
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Acceptance data
+      description: Can a small non-sensitive dataset or reproducible fixture be provided?

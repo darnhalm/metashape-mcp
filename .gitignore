@@ -1,0 +1,18 @@
+._*
+**/._*
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Generated Metashape projects, logs, exports and local acceptance data.
+# Sanitized evidence intended for publication lives in docs/validation/.
+test_runs/
+
+# Local environments and build artifacts.
+.venv/
+dist/
+build/
+*.egg-info/
+
+# Local MCP client configuration can contain absolute paths or tokens.
+.mcp.json

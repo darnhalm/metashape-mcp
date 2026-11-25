@@ -1,0 +1,46 @@
+name: Bug report
+description: Report a reproducible defect without including private project data.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not post bearer tokens, photographs, projects, personal paths, or unsanitized logs.
+  - type: input
+    id: version
+    attributes:
+      label: MCP version
+      placeholder: 0.46.0
+    validations:
+      required: true
+  - type: input
+    id: metashape
+    attributes:
+      label: Metashape version and build
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Use a minimal copied project and redact paths and data.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs
+      render: text
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed tokens, personal paths, photographs, and project data.
+          required: true
